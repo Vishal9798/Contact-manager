@@ -1,0 +1,141 @@
+/* C.css */
+
+  
+
+html {
+    box-sizing: border-box;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+  }
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #eef0f4;
+    --color: #333;
+    --togglebg: #333;
+    --contactIconColor: crimson;
+    --inputTextColor: #111;
+    --deleteIconColor: #111;
+    --filter: drop-shadow(-8px -8px 12px #ffffff) drop-shadow(8px 8px 12px #c3c5c8);
+    --roundcolor: #eef0f4;
+    --toggleslider: #111;
+    --togglesliderColor: #111;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.4;
+    background: var(--bg-color);
+    background-image: url('https://media.istockphoto.com/id/1197671817/photo/old-wall-texture-cement-dirty-gray-with-black-background-abstract-grey-and-silver-color.webp?b=1&s=612x612&w=0&k=20&c=DmUMr5sz0T0FTNv_NOXDQrNGUSrKnQVH0xLuTPDNjg8=');
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ListContainer {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    background: var(--bg-color);
+    border: 12px solid var(--bg-color);
+    filter: var(--filter);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background: var(--bg-color);
+    border: 5px solid var(--bg-color);
+    filter: var(--filter);
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    transition: border 0.5s;
+    outline: none;
+    color: var(--inputTextColor);
+    font-weight: bold;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.Contact_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactdetail {
+    margin-right: 20px;
+}
+
+.contactIcon {
+    margin-right: 5px;
+    font-size: 14px;
+    color: var(--contactIconColor);
+}
+
+.delete-contact {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.delete-contact svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--deleteIconColor);
+}
